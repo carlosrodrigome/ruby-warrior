@@ -67,7 +67,7 @@ Even though this is a text-based game, think of it as two-dimensional where you 
   | S s|
   |C @ |
    ----
-  
+
   > = Stairs
   @ = Warrior (20 HP)
   s = Sludge (12 HP)
@@ -121,22 +121,22 @@ Whenever you sense an area, often one or multiple spaces (in an array) will be r
 
   space.empty?
     If true, this means that nothing (except maybe stairs) is at this location and you can walk here.
-  
+
   space.stairs?
     Determine if stairs are at that location
-  
+
   space.enemy?
     Determine if an enemy unit is at this location.
-  
+
   space.captive?
     Determine if a captive is at this location.
-  
+
   space.wall?
     Returns true if this is the edge of the level. You can't walk here.
-  
+
   space.ticking?
     Returns true if this space contains a bomb which will explode in time.
-  
+
   space.golem?
     Returns true if a golem is occupying this space.
 
@@ -157,7 +157,7 @@ Complex logic can be placed in this block just like in the player turn method. Y
 
 
 == Epic Mode
-  
+
 Once you reach the top of the tower, you will enter epic mode. When running rubywarrior again it will run your current player.rb through all levels in the tower without stopping.
 
 Your warrior will most likely not succeed the first time around, so use the -l option on levels you are having difficulty or want to fine-tune the scoring.
